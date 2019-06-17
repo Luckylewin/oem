@@ -1,3 +1,9 @@
+
+function addToCart(id) {
+	num = parseInt($('.car_num').html());
+	$('.car_num').html(++num)
+}
+
 $(function(){
 	$(".language").click(function(){
 		if($(".language").hasClass('active')){

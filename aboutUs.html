@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/aboutUs.css" />
 	</head>
 	<body>
-		<div class="lenene" id="lenene"  v-cloak>
+		<div class="lenene">
 			<!-- menu start -->
 			<div class="lenene_top">
 				<div class="lenene_top_main">
@@ -95,7 +95,7 @@
 						<div class="car">
 							<a href="car.html">
 								<img class="car_icon" src="img/car.png" />
-								<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+								<div class="car_num">0</div>
 							</a>
 						</div>
 					</div>
@@ -249,8 +249,7 @@
 		</div>
 		
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/vue.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/aboutUs.js"></script>
+		
 	</body>
 </html>

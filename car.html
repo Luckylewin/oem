@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/car.css" />
 	</head>
 	<body>
-		<div class="lenene" id="lenene"  v-cloak>
+		<div class="lenene">
 			<!-- menu start -->
 			<div class="lenene_top">
 				<div class="lenene_top_main">
@@ -114,16 +114,18 @@
 						<div class="top_item short_item">Operation</div>
 					</div>
 					<div class="goods_list">
-						<div class="goods_item" v-for="cl in carList">
+						
+						<!-- item  -->
+						<div class="goods_item">
 							<div class="select_goods">
 								<input type="checkbox" v-model="cl.isSelect" :checked="cl.isSelect" />
 							</div>
 							<div class="goods_img short_item">
-								<img :src="cl.img" />
+								<img src="img/car_goods.png" />
 							</div>
 							<div class="goods_model short_item">
-								<div class="model_title">{{cl.name}}</div>
-								<div class="model_subtitle">Colour:{{cl.color}}</div>
+								<div class="model_title">HP922</div>
+								<div class="model_subtitle">Colour:Pink</div>
 							</div>
 							<div class="goods_parameter long_item">
 								<div class="parameter">With virtual 7.1  RGB </div>
@@ -140,19 +142,20 @@
 							</div>
 							<div class="goods_quantity short_item">
 								<div class="quantity_ipt">
-									<div class="quantity_btn mine" @click="mineNum(cl)">
-										<img src="img/mineBtn.png" />
-									</div>
-									<input type="text" class="ipt_num" v-model="cl.quantity" />
-									<div class="quantity_btn add" @click="addNum(cl)">
-										<img src="img/addBtn.png" />
-									</div>
+								<div class="quantity_btn mine" @click="mineNum(cl)">
+									<img src="img/mineBtn.png" />
+								</div>
+								<input type="text" class="ipt_num" value="1" />
+								<div class="quantity_btn add" @click="addNum(cl)">
+									<img src="img/addBtn.png" />
+								</div>
 								</div>
 							</div>
 							<div class="goods_quantity short_item">
 								<div class="delete_btn" @click="deleteProduct(cl.id)">Delete</div>
 							</div>
 						</div>
+
 					</div>
 					
 					<div class="car_bottom">
@@ -161,7 +164,8 @@
 							<div class="deleteAll">Delete</div>
 						</div>
 						<div class="top_item">
-							<div class="car_total">selected items</div> <div class="seleteNum">{{getSelectNum}}</div> <div class="car_total">
+							<div class="car_total">selected items</div> <div class="seleteNum">
+							5</div> <div class="car_total">
 								piece
 							</div>
 							<div class="printBtn">
@@ -230,7 +234,6 @@
 		
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/vue.js"></script>
 		<script src="js/car.js"></script>
 	</body>
 </html>

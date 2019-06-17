@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/projectInfo.css" />
 	</head>
 	<body>
-		<div class="lenene" id="lenene"  v-cloak>
+		<div class="lenene" id="lenene">
 			<!-- menu start -->
 			<div class="lenene_top">
 				<div class="lenene_top_main">
@@ -95,7 +95,7 @@
 						<div class="car">
 							<a href="car.html">
 								<img class="car_icon" src="img/car.png" />
-								<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+								<div class="car_num">0</div>
 							</a>
 						</div>
 					</div>
@@ -106,40 +106,103 @@
 			<!-- lenene body start -->
 			<div class="lenene_main">
 				<div class="info_main">
-					<div class="info_album">
-						<div class="album_cover">
-							
-							<template v-if="thisProduct.isMove">
-								<video :src="thisProduct.img" style="width: 100%;" controls="controls" loop="loop"></video>
-							</template>
-							<template v-else>
-								<img :src="thisProduct.img" />
-							</template>
-							<!-- <div class="play" v-if="thisProduct.isMove">
-								<img src="img/play.png" class="play_icon" />
-							</div> -->
+					<div class="info_album" style="position: relative;">
+						<div class="product_video" style="text-align: center;" hidden>
+							<div id="video"></div>
 						</div>
-						<div class="album_imgs">
-							<div class="img_item" v-for="pi in productList" v-if="pi.color==thisSelectColor" @mouseover="selectProject(pi.id)" :class="{active : thisProduct.id==pi.id}">
-								<template v-if="pi.type=='video'">
-									<img :src="pi.cover" />
-								</template>
-								<template v-else>
-									<img :src="pi.img" />
-								</template>
-								<div class="play" v-if="pi.type=='video'">
+					
+						<!-- 多种颜色 -->
+						<div class="color_group">
+							<!-- 大图 -->
+							<div class="album_cover">
+								<img src="img/color-1.png" />
+								<!-- <div class="play">
 									<img src="img/play.png" class="play_icon" />
+								</div> -->
+							</div>
+
+							<!-- 小图 -->
+							<div class="album_imgs">
+								<div class="img_item" isVideo=true>
+									<img src="img/color-1.png"  />
+									<div class="play">
+										<img src="img/play.png" class="play_icon" />
+									</div>
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-1.png" />
+								</div>
+							</div>
+						</div>
+
+						<!-- 多种颜色 -->
+						<div class="color_group" hidden>
+							<!-- 大图 -->
+							<div class="album_cover">
+								<img src="img/color-2.png" />
+								<!-- <div class="play">
+									<img src="img/play.png" class="play_icon" />
+								</div> -->
+							</div>
+
+							<!-- 小图 -->
+							<div class="album_imgs">
+								<div class="img_item" isVideo=true>
+									<img src="img/color-2.png" />
+									<div class="play">
+										<img src="img/play.png" class="play_icon" />
+									</div>
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-2.png" />
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-2.png" />
+								</div>
+							</div>
+						</div>
+
+						<!-- 多种颜色 -->
+						<div class="color_group" hidden>
+							<!-- 大图 -->
+							<div class="album_cover">
+								<img src="img/color-3.png" />
+								<div class="play">
+									<img src="img/play.png" class="play_icon" />
+								</div>
+							</div>
+
+							<!-- 小图 -->
+							<div class="album_imgs">
+								<div class="img_item" isVideo=true>
+									<img src="img/cover.png" />
+									<div class="play">
+										<img src="img/play.png" class="play_icon" />
+									</div>
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-3.png" />
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-3.png" />
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-3.png" />
+								</div>
+								<div class="img_item" isVideo=false>
+									<img src="img/color-3.png" />
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="info_content">
 						<div class="info_title">7.1 SURROUND GAMING HEADSET</div>
 						<div class="info_type">HG8895</div>
 						<div class="info_colors">
-						<div class="color color1" :class="{active_color : active == 'red'}" @click="selectColor('red')"></div>
-						<div class="color color2" :class="{active_color : active == 'green'}"  @click="selectColor('green')"></div>
-						<div class="color color3" :class="{active_color : active == 'blue'}" @click="selectColor('blue')"></div>
+							<div class="color color1 active_color"></div>
+							<div class="color color2" ></div>
+							<div class="color color3" ></div>
 						</div>
 						<div class="info_parameter_title">Product Parameter</div>
 						<div class="product_parameters">
@@ -156,9 +219,9 @@
 							<div class="parameter">Headset: a conjoined microphone</div> 
 						</div>
 						<div class="info_btns">
-							<div class="add_car" @click="addToCar">
-								<img src="img/addCar_noselect.png" v-if="thisProduct==''" />
-								<img src="img/addCar_selected.png" v-else />
+							<div class="add_car" onclick="addToCart(1)">
+								<img src="img/addCar_noselect.png"/>
+								<img src="img/addCar_selected.png" hidden="" />
 							</div>
 							<div class="back_goods">
 								<img src="img/back.png" class="backNoSelect" />
@@ -240,7 +303,54 @@
 		
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/vue.js"></script>
-		<script src="js/projectInfo.js"></script>
+
+		<!-- 播放器播放 -->
+		<script type="text/javascript" src="./js/ckplayer.min.js"></script>
+		<script type="text/javascript">
+			var videoObject = {
+				container: '#video', //容器的ID或className
+				variable: 'player',//播放函数名称
+				poster:'/img/cover.png',//封面图片
+				video: [//视频地址列表形式
+					['http://img.ksbbs.com/asset/Mon_1703/eb048d7839442d0.mp4', 'video/mp4'],
+				]
+			};
+			var player = new ckplayer(videoObject);
+		</script>
+
+		<script type="text/javascript">
+			function playVideo(isVideo) {
+				if (isVideo == 'true') {
+					$('.product_video').show();
+					player.elementCoordinate();
+				} else {
+					$('.product_video').hide();
+					player.videoPause();
+				}
+			}
+
+			// 图片切换
+			$('.album_imgs .img_item').click(function() {
+				 isVideo = $(this).attr('isVideo');
+				 playVideo(isVideo);
+
+				 $(this).siblings().removeClass('active');
+				 $(this).addClass('active');
+				 img = $(this).find('img').attr('src');
+
+				 index = $(this).parent().parent().index() - 1;
+				 $('.album_cover').eq(index).find('img').first().attr('src', img);
+			});
+
+			// 颜色切换
+			$('.color').click(function() {
+				 $(this).siblings().removeClass('active_color');
+				 $(this).addClass('active_color');
+				 index = $(this).index();
+				 currentGroup = $('.color_group').eq(index);
+				 currentGroup.show();
+				 currentGroup.siblings().hide();
+			});
+		</script>
 	</body>
 </html>

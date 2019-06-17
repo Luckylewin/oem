@@ -44,7 +44,6 @@
 .album_imgs{
 	width: 543px;
 	display: flex;
-	justify-content: space-between;
 	margin-top: 5px;
 }
 .img_item{
@@ -55,6 +54,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 5px;
 }
 .img_item.active{
 	border-color: #FF0000;
@@ -192,6 +192,14 @@
 	color: white;
 	font-size: 13px;
 	cursor: pointer;
+}
+
+.product_video {
+	position: absolute;top:0px;z-index: 1;
+}
+
+.product_video #video {
+	width: 545px; height: 545px;
 }
 
 @media screen and (max-width:1280px) {

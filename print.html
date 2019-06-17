@@ -26,13 +26,13 @@
 					<div class="top_item min_item long_th">Total Price</div>
 				</div>
 				<div class="goods_list">
-					<div class="goods_item" v-for="cl in carList">
+					<div class="goods_item">
 						<div class="goods_img short_item">
-							<img :src="cl.img" />
+							<img src="img/car_goods.png" />
 						</div>
 						<div class="goods_model short_item">
-							<div class="model_title">{{cl.name}}</div>
-							<div class="model_subtitle">Colour:{{cl.color}}</div>
+							<div class="model_title">HP922</div>
+							<div class="model_subtitle">Colour:Pink</div>
 						</div>
 						<div class="goods_parameter long_item">
 							<div class="parameter">With virtual 7.1  RGB </div>
@@ -48,7 +48,7 @@
 							<div class="parameter">Headset: a conjoined microphone </div>
 						</div>
 						<div class="goods_quantity min_item">
-							{{cl.quantity}}
+							1
 						</div>
 						<div class="goods_quantity min_item">
 							
@@ -94,7 +94,6 @@
 			</div>
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/vue.js"></script>
-		<script src="js/print.js"></script>
+
 	</body>
 </html>

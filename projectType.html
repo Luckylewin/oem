@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/projectType.css" />
 	</head>
 	<body>
-		<div class="lenene" id="lenene"  v-cloak>
+		<div class="lenene" id="lenene">
 			<!-- menu start -->
 			<div class="lenene_top">
 				<div class="lenene_top_main">
@@ -95,7 +95,7 @@
 						<div class="car">
 							<a href="car.html">
 								<img class="car_icon" src="img/car.png" />
-								<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+								<div class="car_num" v-if="carList.length>0">1</div>
 							</a>
 						</div>
 					</div>
@@ -134,14 +134,14 @@
 								</div>
 								<div class="type_menus">
 									<ul class="menus_ul">
-										<li class="menus_li" v-for="pt of projectType" @click="changeTabBar(pt)" :class="{active :thisProjectType==pt}">{{pt}}</li>
-										<!-- <li class="menus_li">Bluetooth Headphone</li>
+										<!-- @click=changeTabBar -->
+										<li class="menus_li">Bluetooth Headphone</li>
 										<li class="menus_li active">DJ Headphone</li>
 										<li class="menus_li">Low-end Headphone</li>
 										<li class="menus_li">Middle-end Headphone</li>
 										<li class="menus_li">High-end Headphone</li>
 										<li class="menus_li">Microphone</li>
-										<li class="menus_li">USB Headphone</li> -->
+										<li class="menus_li">USB Headphone</li>
 									</ul>
 								</div>
 								<div class="menu_list_btn right_btn" @click="menuRight()">
@@ -150,25 +150,94 @@
 							</div>
 						</div>
 					</div>
-					<div  v-for="pt of projectType" class="projectType" :class="{active : pt==thisProjectType}">
+					<div >
 						<div class="projectType_list">
-							<div class="project_item" v-for="pl in projectList" v-if="pl.projectType==pt || pt=='ALL'">
-								<template v-if="pl.isCheck">
-									<img src="img/mine.png" class="add_project" @click="mineToCar(pl.id)" />
-								</template>
-								<template v-else>
-									<img src="img/add.png" class="add_project" @click="addToCar(pl.id)" />
-								</template>
+
+							<div class="project_item" >
 								<a href="projectInfo.html">
 									<div class="project_img">
-										<img :src="pl.cover" />
+										<img src="img/goods_list.png" />
 									</div>
-									<div class="project_title">{{pl.name}}</div>
-									<div class="project_content">{{pl.info}}</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
 								</a>
 							</div>
-							
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>
+							<div class="project_item" >
+								<a href="projectInfo.html">
+									<div class="project_img">
+										<img src="img/goods_list.png" />
+									</div>
+								<div class="project_title">HG8895</div>
+								<div class="project_content">7.1 SURROUND GAMING HEADSET</div>
+								</a>
+							</div>	
+
+
 						</div>
+
 						<div class="project_page">
 							<div class="page_btn">
 								<img src="img/upPage.png" />
@@ -247,10 +316,8 @@
 			</div>
 			<!-- lenene footer end -->
 		</div>
-		
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/vue.js"></script>
 		<script src="js/projectType.js"></script>
 	</body>
 </html>

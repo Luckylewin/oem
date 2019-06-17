@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a4fde8a-9d9e-48ec-934e-6bfdc5149c2b" name="Default" comment="" />
+    <list default="true" id="1a4fde8a-9d9e-48ec-934e-6bfdc5149c2b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/OEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OEM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/aboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/aboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/car.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/car.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/projectInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projectInfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/projectType.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projectType.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/superfish.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/superfish.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/AdobeHeitiStd-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/AdobeHeitiStd-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/GOTHAMCOND-BOLD.OTF" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/GOTHAMCOND-BOLD.OTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/GOTHAMCOND-BOOK.OTF" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/GOTHAMCOND-BOOK.OTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/GOTHAMCOND-MEDIUM.OTF" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/GOTHAMCOND-MEDIUM.OTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gotham-Light.OTF" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/Gotham-Light.OTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/add.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/addBtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/addBtn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/addCar.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/addCar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/addCar_noselect.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/addCar_noselect.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/addCar_selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/addCar_selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/add_car2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/add_car2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/back_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/back_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car_goods.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/car_goods.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/cover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/down.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods10.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods12.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods13.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods14.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods15.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods5.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods6.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods7.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods8.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods9.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/goods_list.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/goods_list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon5.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon6.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ipt_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ipt_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/map2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/map2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mine.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/mine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mineBtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/mineBtn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/nextPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/nextPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/print.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/print.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/search_ipt.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/search_ipt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/top_banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/top_banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/upPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/upPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/img/video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html___jb_old___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html___jb_tmp___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/car.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/hoverIntent.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/hoverIntent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/print.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/print.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/projectInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/projectInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/projectType.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/projectType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/superfish.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/superfish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print.html" beforeDir="false" afterPath="$PROJECT_DIR$/print.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/projectInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectType.html" beforeDir="false" afterPath="$PROJECT_DIR$/projectType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/demo.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video/demo.mp4" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,21 +105,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="superfish.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/superfish.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="336" column="22" lean-forward="true" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
+            <state relative-caret-position="2596">
+              <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="superfish.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/superfish.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+            <state relative-caret-position="276">
+              <caret line="336" column="22" lean-forward="true" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -35,6 +130,9 @@
     <findStrings>
       <find>vue</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,6 +157,7 @@
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -85,6 +184,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/phpStudy/WWW/game" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -110,36 +210,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560749527650</updated>
-      <workItem from="1560749530910" duration="1236000" />
+      <workItem from="1560749530910" duration="1369000" />
+      <workItem from="1560761652517" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1236000" />
+    <option name="totallyTimeSpent" value="1399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Migrations" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Migrations" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,24 +251,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/superfish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2596">
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7634">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/hoverIntent.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/superfish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -178,9 +281,16 @@
     <entry file="file://$PROJECT_DIR$/js/public.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/superfish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2596">
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="276">
           <caret line="336" column="22" lean-forward="true" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
         </state>
       </provider>
