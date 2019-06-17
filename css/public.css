@@ -320,5 +320,10 @@ ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul{
 }
 
 @media only screen and (min-width: 1680px) {
-    
+    .lenene_logo {
+		margin-left: -230px;
+	}
+	.lenene_search {
+		margin-right: -230px;
+	}
 }
