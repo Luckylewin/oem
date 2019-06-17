@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>LENENE-car</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen"/>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/car.css" />
+	</head>
+	<body>
+		<div class="lenene" id="lenene"  v-cloak>
+			<!-- menu start -->
+			<div class="lenene_top">
+				<div class="lenene_top_main">
+					<div class="lenene_logo">
+						<img src="img/logo.png" />
+					</div>
+					<div class="lenene_menu">
+						<ul class="sf-menu">
+							<li>
+								<a href="index.html" class="uppercase">home</a>
+							</li>
+							<li>
+								<a href="projectType.html" class="uppercase">product</a>
+								<ul>
+									<li>
+										<a href="#aa">Computer Accessories</a>
+									</li>
+									<li class="current">
+										<a href="#ab">Car Accessories</a>
+										<ul>
+											<li class="current"><a href="#">Tire gauge</a></li>
+											<li><a href="#">Navigation</a></li>
+											<li><a href="#">Parking Sensor</a></li>
+											<li><a href="#">Alcohol Tester</a></li>
+											<li><a href="#">Driving Recorder</a></li>
+											<li><a href="#">Cigarette Lighter</a></li>
+											<li><a href="#">Car Charger</a></li>
+											<li><a href="#">FM Converter</a></li>
+											<li><a href="#">FM transmitter</a></li>
+											<li><a href="#">Dust Collector</a></li>
+											<li><a href="#">Bracket</a></li>
+											<li><a href="#">In Car Bluetooth</a></li>
+											<li><a href="#">In Car Air Cleaner</a></li>
+											<li><a href="#">Car Inverter</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Office Supplies</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Apple Samsung accessories</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="uppercase">downloads</a>
+							</li>
+							<li>
+								<a href="aboutUs.html" class="uppercase">about us</a>
+							</li>
+							<li>
+								<a href="#" class="uppercase">news</a>
+							</li>
+						</ul>
+						<div class="uppercase language">
+							en
+							<img src="img/down.png" />
+							<ul class="language_ul">
+								<li class="language_li">中文</li>
+								<li class="language_li">English</li>
+							</ul>
+						</div>
+					</div>
+					<div class="lenene_search">
+						<div class="search_ipt_item">
+							<input type="text" class="search_ipt" />
+							<img class="search_icon" src="img/search.png" />
+						</div>
+						<div class="car">
+							<img class="car_icon" src="img/car.png" />
+							<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- menu end -->
+			
+			<!-- lenene body start -->
+			<div class="lenene_main">
+				<div class="car_main">
+					<div class="car_list_top">
+						<div class="top_item short_item">
+							<input type="checkbox" class="item_checkbox" v-model="isSelectAll" @change="selectAll" /> All election
+						</div>
+						<div class="top_item short_item">Model</div>
+						<div class="top_item long_item long_th">Product Parameter </div>
+						<div class="top_item short_item">Quantity</div>
+						<div class="top_item short_item">Operation</div>
+					</div>
+					<div class="goods_list">
+						<div class="goods_item" v-for="cl in carList">
+							<div class="select_goods">
+								<input type="checkbox" v-model="cl.isSelect" :checked="cl.isSelect" />
+							</div>
+							<div class="goods_img short_item">
+								<img :src="cl.img" />
+							</div>
+							<div class="goods_model short_item">
+								<div class="model_title">{{cl.name}}</div>
+								<div class="model_subtitle">Colour:{{cl.color}}</div>
+							</div>
+							<div class="goods_parameter long_item">
+								<div class="parameter">With virtual 7.1  RGB </div>
+								<div class="parameter">Maximum power: 50MV </div> 
+								<div class="parameter">Rated power: 30MV</div>
+								<div class="parameter">Impedance: 32 ohms plus or minus 15%</div>
+								<div class="parameter">Sensitivity: 105 plus or minus 3qb</div>
+								<div class="parameter">Microphone sensitivity: -40 plus or minus 3qb</div>
+								<div class="parameter">Transmission mode: USB 7.1</div>
+								<div class="parameter">Main line length: 2.4 M</div>
+								<div class="parameter">Speaker:2* 50 mm</div>
+								<div class="parameter">Tone control: adjustable</div>
+								<div class="parameter">Headset: a conjoined microphone </div>
+							</div>
+							<div class="goods_quantity short_item">
+								<div class="quantity_ipt">
+									<div class="quantity_btn mine" @click="mineNum(cl)">
+										<img src="img/mineBtn.png" />
+									</div>
+									<input type="text" class="ipt_num" v-model="cl.quantity" />
+									<div class="quantity_btn add" @click="addNum(cl)">
+										<img src="img/addBtn.png" />
+									</div>
+								</div>
+							</div>
+							<div class="goods_quantity short_item">
+								<div class="delete_btn" @click="deleteProduct(cl.id)">Delete</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="car_bottom">
+						<div class="top_item">
+							<input type="checkbox" class="item_checkbox" v-model="isSelectAll" @change="selectAll" /> All election
+							<div class="deleteAll">Delete</div>
+						</div>
+						<div class="top_item">
+							<div class="car_total">selected items</div> <div class="seleteNum">{{getSelectNum}}</div> <div class="car_total">
+								piece
+							</div>
+							<div class="printBtn">
+								<a href="print.html" style="display: block;height: 100%;"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- lenene body end -->
+			
+			<!-- lenene footer start -->
+			<div class="lenene_footer">
+				<div class="footer_main">
+					<div class="footer_items">
+						<div class="items">
+							<div class="items_title">Shop</div>
+							<div class="items_content">
+								<div class="item">Gaming Combo</div>
+								<div class="item">Case</div>
+								<div class="item">Speaker</div>
+								<div class="item">Keyboard</div>
+								<div class="item">Mouse</div>
+								<div class="item">Headphone</div>
+								<div class="item">Earphone</div>
+								<div class="item">USB HUB</div>
+								<div class="item">Cable</div>
+								<div class="item">Card reader</div>
+								<div class="item">Mouse pad</div>
+								<div class="item">Other</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">Customer Service</div>
+							<div class="items_content" style="height: 230px;">
+								<div class="item">Register Your Product</div>
+								<div class="item">Influencers</div>
+								<div class="item">User Manual</div>
+								<div class="item">Track Order</div>
+								<div class="item">Refound & Exchange</div>
+								<div class="item">Payment</div>
+								<div class="item">Shopping Policy</div>
+								<div class="item">Warranty & Refund Policy</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">About Company</div>
+							<div class="items_content">
+								<div class="item">Why Choose Us</div>
+								<div class="item">About Us</div>
+								<div class="item">Contact Us</div>
+								<div class="item">Online Wholesale</div>
+								<div class="item">Sales Network</div>
+								<div class="item">Affiate Program</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_copy">
+						<img src="img/logo.png" />
+						Privacy Policy I Terms of Service I App Privacy Policy
+					</div>
+				</div>
+			</div>
+			<!-- lenene footer end -->
+		</div>
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/car.js"></script>
+	</body>
+</html>

@@ -1,0 +1,232 @@
+.info_main{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 87px 0;
+	display: flex;
+}
+.info_album{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.album_cover{
+	width: 543px;
+	height: 543px;
+	border: solid 1px #BFBFBF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+.album_cover img{
+	height: 80%;
+}
+.play{
+	width: 108px;
+	height: 108px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.play img{
+	width: 100%;
+}
+.play_icon{
+	width: 100%!important;
+	height: 100%!important;
+}
+.album_imgs{
+	width: 543px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+.img_item{
+	width: 106px;
+	height: 106px;
+	position: relative;
+	border: solid 1px #BFBFBF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img_item.active{
+	border-color: #FF0000;
+}
+.img_item img{
+	height: 80%;
+}
+.img_item .play{
+	width: 46px;
+	height: 46px;
+}
+.img_item .play img{
+	width: 100%;
+	height: 100%;
+}
+
+.info_content{
+	width: 50%;
+	position: relative;
+}
+.info_title{
+	color: #B7B7B7;
+	font-size: 65px;
+	text-indent: -80;
+	line-height: 62px;
+}
+.info_type{
+	color: #B7B7B7;
+	font-size: 25px;
+	margin-top: 20px;
+}
+.info_colors{
+	display: flex;
+	margin-top: 20px;
+}
+.color{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.active_color{
+	width: 38px;
+	height: 38px;
+	border:2px solid rgba(191,191,191,1);
+}
+
+.color1{
+	background: #537CB3;
+}
+.color2{
+	background: #53B3A2;
+}
+.color3{
+	background: #D39724;
+}
+.info_parameter_title{
+	color: #B7B7B7;
+	font-size: 31px;
+	margin-top: 20px;
+	font-family: 'Gotham-Medium';
+}
+.product_parameters{
+	margin-top: 5px;
+	font-family: 'Gotham-Book';
+}
+.parameter{
+	color: #B7B7B7;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.info_btns{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.add_car{
+	width: 241px;
+	height: 42px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.add_car img,.back_goods img{
+	width: 100%;
+}
+.back_goods{
+	width: 157px;
+	height: 42px;
+	cursor: pointer;
+}
+.backSelect{
+	display: none;
+}
+.back_goods:hover .backNoSelect{
+	display: none;
+}
+.back_goods:hover .backSelect{
+	display: block;
+}
+
+.download{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 50px 0 127px;
+}
+.download_title{
+	padding: 7px 61px;
+	border-bottom: solid 3px #BFBFBF;
+	color: #BFBFBF;
+	font-size: 18px;
+	font-family: 'Gotham-Medium';
+}
+.download_files{
+	padding: 11px 61px;
+}
+.file_item{
+	color: #B7B7B7;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Gotham-Medium'
+}
+.download_btn{
+	width: 88px;
+	height: 21px;
+	background: #BFBFBF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+@media screen and (max-width:1280px) {
+	.info_title{
+		font-size: 45px;
+	}
+	.album_cover{
+		width: 400px;
+		height: 400px;
+	}
+	.album_imgs{
+		width: 400px;
+	}
+	.img_item{
+		width: 78px;
+		height: 78px;
+	}
+	.info_type{
+		margin-top: 10px;
+	}
+	.info_parameter_title{
+		margin-top: 10px;
+		font-size: 25px;
+	}
+	.color{
+		width: 35px;
+		height: 35px;
+	}
+	.add_car{
+		width: 200px;
+	}
+	.back_goods{
+		width: 127px;
+	}
+	.info_content {
+		height: 600px;
+	}
+}

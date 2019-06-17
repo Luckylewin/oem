@@ -1,0 +1,218 @@
+.print{
+	width: 100%;
+}
+.print_top{
+	display: flex;
+	padding: 40px 30px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.print_title{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.car_main{
+	width: 100%;
+	margin: 0 auto;
+}
+.car_list_top{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 46px;
+	background: white;
+	margin-bottom: 9px;
+	border-top: solid 1px #7d7d7d;
+	border-bottom: solid 1px #7d7d7d;
+}
+.top_item{
+	font-size: 16px;
+	height: 100%;
+	align-items: center;
+	display: flex;
+}
+.long_item{
+	width: 40%;
+}
+.short_item{
+	width: 15%;
+	font-size:16px;
+	font-family:Adobe Heiti Std R;
+	font-weight:normal;
+	color:rgba(0,0,0,1);
+	line-height:17px;
+}
+.long_th{
+	font-weight: bold;
+}
+.model_subtitle{
+	font-size:15px;
+	font-family:Adobe Heiti Std R;
+	font-weight:normal;
+	color:rgba(0,0,0,1);
+	line-height:31px;
+	opacity:0.6;
+}
+
+.min_item{
+	width: 10%;
+}
+.top_item .item_checkbox{
+	background: white;
+	margin-right: 10px;
+}
+.car_bottom{
+	display: flex;
+	justify-content: space-between;
+	background: #DCDCDC;
+	height: 55px;
+	align-items: center;
+	padding-left: 20px;
+	margin-top: 9px;
+}
+.deleteAll{
+	margin-left: 36px;
+}
+.seleteNum{
+	color: #FF0000;
+	font-size: 23px;
+	margin: 0 5px;
+}
+.printBtn{
+	width: 130px;
+	height: 100%;
+	background-image: url(../img/print.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 30px;
+}
+.goods_item{
+	height: 228px;
+	background: white;
+	margin-bottom: 1px;
+	position: relative;
+	padding: 20px;
+	display: flex;
+	border-bottom: solid 1px #7D7D7D;
+}
+.select_goods{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.goods_img{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.goods_img img{
+	width: 50%;
+}
+.goods_model{
+	display: flex;
+	/* align-items: center; */
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+}
+.model_title{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.parameter{
+	font-size: 13px;
+	line-height: 17px;
+}
+.goods_quantity{
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+.quantity_ipt{
+	display: flex;
+	align-items: center;
+}
+.quantity_btn{
+	width: 24px;
+	height: 21px;
+}
+.quantity_btn img{
+	width: 100%;
+}
+.ipt_num{
+	height: 20px;
+	width: 64px;
+	font-size: 15px;
+	outline: none;
+}
+.delete_btn{
+	font-size: 16px;
+}
+
+
+
+/* 发送窗口 */
+.send{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	top: 0;
+	left: 0;
+}
+.send_model{
+	width: 418px;
+	height: 328px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border:solid 1px #7d7d7d;
+	background: #E5E5E5;
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);
+	padding: 32px 72px;
+}
+.model_title{
+	font-size: 22px;
+	font-weight: bold;
+}
+.model_item{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.input_item{
+	position: relative;
+	height: 23px;
+	margin-top: 5px;
+}
+.input_mast{
+	font-size: 25px;
+	color: #7f7f7f;
+	position: absolute;
+	left: 10px;
+	display: flex;
+	align-items: center;
+}
+.input{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	background: white;
+	padding-left: 25px;
+	outline: none;
+	border: none;
+}
+.model_btns{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.btn_item{
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}

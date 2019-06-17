@@ -1,0 +1,125 @@
+.main_top{
+	height: 463px;
+	width: 100%;
+	background-image: url(../img/top_banner.png);
+	background-repeat: no-repeat;
+	/* background-size: auto 100%; */
+	background-size: 100%;
+	background-position: center;
+}
+.top_content{
+	/* width: 1100px; */
+	width: 100%;
+	max-width: 1100px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.top_title{
+	width: 978px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.top_logo{
+	margin-bottom: 50px;
+	width: 319px;
+}
+.top_logo img{
+	width: 100%;
+}
+.banner_text{
+	font-family: 'Gotham-Bold';
+	text-transform: uppercase;
+	font-size: 60px;
+	color: white;
+	font-weight: bold;
+	line-height: 65px;
+	text-indent: -40;
+}
+.banner_time{
+	text-transform: uppercase;
+	font-size: 55px;
+	color: white;
+	line-height: 65px;
+	text-indent: -40;
+}
+
+.aboutList{
+	/* width: 1100px; */
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 55px 0;
+}
+.about_item{
+	display: flex;
+	justify-content: space-between;
+	height: 189px;
+	margin-bottom: 49px;
+}
+.item_icon{
+	width: 189px;
+	height: 189px;
+	margin-right: 44px;
+}
+.about_info{
+	flex: 1;
+}
+.about_title{
+	color: #808080;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-indent: -40;
+	line-height: 65px;
+	min-height: 65px;
+	font-family: 'Gotham-Bold';
+}
+.about_content{
+	color: #808080;
+	font-size: 20px;
+	text-indent: -40;
+	line-height: 27px;
+	font-family: 'Gotham-Medium';
+}
+.contactUs{
+	display: flex;
+	/* width: 1100px; */
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-bottom: 105px;
+}
+.contactUs_info{
+	width: 440px;
+}
+.info_title{
+	font-size: 50px;
+	color: #808080;
+	text-indent: -40;
+	line-height: 27px;
+	margin-bottom: 49px;
+	font-weight: bold;
+}
+.info_item{
+	color: #808080;
+	font-size: 20px;
+	text-indent: -40;
+	line-height: 27px;
+	margin: 0;
+	word-wrap:break-word;
+}
+.contact_map{
+	width: 473px;
+	height: 300px;
+	background: #808080;
+	margin-left: 91px;
+}
+
+
+@media screen and (max-width:1920px) {
+	.main_top{
+		 background-size: auto 100%;
+	}
+}

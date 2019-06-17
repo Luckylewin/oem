@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>LENENE</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen"/>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="lenene" id="lenene"  v-cloak>
+			<!-- menu start -->
+			<div class="lenene_top">
+				<div class="lenene_top_main">
+					<div class="lenene_logo">
+						<img src="img/logo.png" />
+					</div>
+					<div class="lenene_menu">
+						<ul class="sf-menu">
+							<li>
+								<a href="index.html" class="uppercase">home</a>
+							</li>
+							<li>
+								<a href="projectType.html" class="uppercase">product</a>
+								<ul>
+									<li>
+										<a href="#aa">Computer Accessories</a>
+									</li>
+									<li class="current">
+										<a href="#ab">Car Accessories</a>
+										<ul>
+											<li class="current"><a href="#">Tire gauge</a></li>
+											<li><a href="#">Navigation</a></li>
+											<li><a href="#">Parking Sensor</a></li>
+											<li><a href="#">Alcohol Tester</a></li>
+											<li><a href="#">Driving Recorder</a></li>
+											<li><a href="#">Cigarette Lighter</a></li>
+											<li><a href="#">Car Charger</a></li>
+											<li><a href="#">FM Converter</a></li>
+											<li><a href="#">FM transmitter</a></li>
+											<li><a href="#">Dust Collector</a></li>
+											<li><a href="#">Bracket</a></li>
+											<li><a href="#">In Car Bluetooth</a></li>
+											<li><a href="#">In Car Air Cleaner</a></li>
+											<li><a href="#">Car Inverter</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Office Supplies</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Apple Samsung accessories</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="uppercase">downloads</a>
+							</li>
+							<li>
+								<a href="aboutUs.html" class="uppercase">about us</a>
+							</li>
+							<li>
+								<a href="#" class="uppercase">news</a>
+							</li>
+						</ul>
+						<div class="uppercase language">
+							en
+							<img src="img/down.png" />
+							<ul class="language_ul">
+								<li class="language_li">中文</li>
+								<li class="language_li">English</li>
+							</ul>
+						</div>
+					</div>
+					<div class="lenene_search">
+						<div class="search_ipt_item">
+							<input type="text" class="search_ipt" />
+							<img class="search_icon" src="img/search.png" />
+						</div>
+						<div class="car">
+							<a href="car.html">
+								<img class="car_icon" src="img/car.png" />
+								<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- menu end -->
+			
+			<!-- lenene body start -->
+			<div class="lenene_main">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/banner.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/banner.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/banner.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="goods">
+					<div class="goods_main">
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods1.png" />
+								<div class="goods_name">Gaming Combo</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods2.png" />
+								<div class="goods_name">Case</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods3.png" />
+								<div class="goods_name">Speaker</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods4.png" />
+								<div class="goods_name">Keyboard</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods5.png" />
+								<div class="goods_name">Mouse</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods6.png" />
+								<div class="goods_name">Headphone</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods7.png" />
+								<div class="goods_name">Earphone</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods8.png" />
+								<div class="goods_name">USB HUB</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods9.png" />
+								<div class="goods_name">Cable</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods10.png" />
+								<div class="goods_name">Card reader</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods12.png" />
+								<div class="goods_name">Mouse pad</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods12.png" />
+								<div class="goods_name">Car Inverter</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods13.png" />
+								<div class="goods_name">Car Charger</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods14.png" />
+								<div class="goods_name">Alcohol Tester</div>
+							</a>
+						</div>
+						<div class="goods_item">
+							<a href="#">
+								<img src="img/goods15.png" />
+								<div class="goods_name">Driving Recorder</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-captions" data-slide-to="1"></li>
+						<li data-target="#carousel-example-captions" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/banner2.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/banner2.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/banner2.png" />
+							<div class="item_main">
+								<div class="goods_title">MS-120</div>
+								<div class="goods_info">2.0 channel stereo speaker</div>
+								<div class="add_car" @click="addToCar">
+									<img src="img/addCar.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- lenene body end -->
+			
+			<!-- lenene footer start -->
+			<div class="lenene_footer">
+				<div class="footer_main">
+					<div class="footer_items">
+						<div class="items">
+							<div class="items_title">Shop</div>
+							<div class="items_content">
+								<div class="item">Gaming Combo</div>
+								<div class="item">Case</div>
+								<div class="item">Speaker</div>
+								<div class="item">Keyboard</div>
+								<div class="item">Mouse</div>
+								<div class="item">Headphone</div>
+								<div class="item">Earphone</div>
+								<div class="item">USB HUB</div>
+								<div class="item">Cable</div>
+								<div class="item">Card reader</div>
+								<div class="item">Mouse pad</div>
+								<div class="item">Other</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">Customer Service</div>
+							<div class="items_content" style="height: 230px;">
+								<div class="item">Register Your Product</div>
+								<div class="item">Influencers</div>
+								<div class="item">User Manual</div>
+								<div class="item">Track Order</div>
+								<div class="item">Refound & Exchange</div>
+								<div class="item">Payment</div>
+								<div class="item">Shopping Policy</div>
+								<div class="item">Warranty & Refund Policy</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">About Company</div>
+							<div class="items_content">
+								<div class="item">Why Choose Us</div>
+								<div class="item">About Us</div>
+								<div class="item">Contact Us</div>
+								<div class="item">Online Wholesale</div>
+								<div class="item">Sales Network</div>
+								<div class="item">Affiate Program</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_copy">
+						<img src="img/logo.png" />
+						Privacy Policy I Terms of Service I App Privacy Policy
+					</div>
+				</div>
+			</div>
+			<!-- lenene footer end -->
+		</div>
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/superfish.js"></script>
+
+		<script src="js/public.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>LENENE-about us</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen"/>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/aboutUs.css" />
+	</head>
+	<body>
+		<div class="lenene" id="lenene"  v-cloak>
+			<!-- menu start -->
+			<div class="lenene_top">
+				<div class="lenene_top_main">
+					<div class="lenene_logo">
+						<img src="img/logo.png" />
+					</div>
+					<div class="lenene_menu">
+						<ul class="sf-menu">
+							<li>
+								<a href="index.html" class="uppercase">home</a>
+							</li>
+							<li>
+								<a href="projectType.html" class="uppercase">product</a>
+								<ul>
+									<li>
+										<a href="#aa">Computer Accessories</a>
+									</li>
+									<li class="current">
+										<a href="#ab">Car Accessories</a>
+										<ul>
+											<li class="current"><a href="#">Tire gauge</a></li>
+											<li><a href="#">Navigation</a></li>
+											<li><a href="#">Parking Sensor</a></li>
+											<li><a href="#">Alcohol Tester</a></li>
+											<li><a href="#">Driving Recorder</a></li>
+											<li><a href="#">Cigarette Lighter</a></li>
+											<li><a href="#">Car Charger</a></li>
+											<li><a href="#">FM Converter</a></li>
+											<li><a href="#">FM transmitter</a></li>
+											<li><a href="#">Dust Collector</a></li>
+											<li><a href="#">Bracket</a></li>
+											<li><a href="#">In Car Bluetooth</a></li>
+											<li><a href="#">In Car Air Cleaner</a></li>
+											<li><a href="#">Car Inverter</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Office Supplies</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Apple Samsung accessories</a>
+										<ul>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+											<li><a href="#">menu item</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="uppercase">downloads</a>
+							</li>
+							<li>
+								<a href="aboutUs.html" class="uppercase">about us</a>
+							</li>
+							<li>
+								<a href="#" class="uppercase">news</a>
+							</li>
+						</ul>
+						<div class="uppercase language">
+							en
+							<img src="img/down.png" />
+							<ul class="language_ul">
+								<li class="language_li">中文</li>
+								<li class="language_li">English</li>
+							</ul>
+						</div>
+					</div>
+					<div class="lenene_search">
+						<div class="search_ipt_item">
+							<input type="text" class="search_ipt" />
+							<img class="search_icon" src="img/search.png" />
+						</div>
+						<div class="car">
+							<a href="car.html">
+								<img class="car_icon" src="img/car.png" />
+								<div class="car_num" v-if="carList.length>0">{{carList.length}}</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- menu end -->
+			
+			<!-- lenene body start -->
+			<div class="lenene_main">
+				<div class="main_top">
+					<div class="top_content">
+						<div class="top_title">
+							<div class="top_logo">
+								<img src="img/big_logo.png" />
+							</div>
+							<div class="top_text">
+								<div class="banner_text">one serial brand serviceconent for oem</div>
+								<div class="banner_time">project in 2019</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aboutList">
+					<div class="about_item">
+						<img src="img/icon1.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title">inspection service</div>
+							<div class="about_content">
+								Our company can offer you the experience QC staff to help you to do inspection in different your supplier factoryGuangdong province place And offer you the professional QC inspection report for your clear the real conditionfor you mass products as you placed, surly will give your suggestion to say Pass or Not for your reference.
+							</div>
+						</div>
+					</div>
+					<div class="about_item">
+						<img src="img/icon2.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title">PACKAGE DESIGN SERVICE</div>
+							<div class="about_content">
+								Our company can offer you one serial of brand package design and concept for your reference, It can save youore salary and time to hire professional designer in your local office or in china office, At the same time to improveyou order turnover rate and market competitive power.
+							</div>
+						</div>
+					</div>
+					<div class="about_item">
+						<img src="img/icon3.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title">PAYMENT SERVICE</div>
+							<div class="about_content">
+								Our company can help you to pay the goods payment to your other supplier after you transfer all ready shipmentgoods payment to our company special account, It will help you to save more times transferring to others supplier,And also the important thing is to control your money risk. As we only help you pay money to your other supplierafter we inspected the mass products, Or only pay him when the goods arrange the delivering
+							</div>
+						</div>
+					</div>
+					<div class="about_item">
+						<img src="img/icon4.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title">ASSEMBLED CONTAINER SERVICE</div>
+							<div class="about_content">
+								Our company can help you to manage container service with different supplier, save more time and energy toinstruct different supplier for you
+							</div>
+						</div>
+					</div>
+					<div class="about_item">
+						<img src="img/icon5.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title"> </div>
+							<div class="about_content">
+								AS ALL ABOVE ONE SERIAL 5 POINTS SERVICE WE WILL ONLY COLLECT YOU 3%-5% OF TOTALORDER VALUE AMOUNT IN ONE TIME TO FULFILL YOUR MORE REQUIREMENTS
+							</div>
+						</div>
+					</div>
+					<div class="about_item">
+						<img src="img/icon6.png" class="item_icon" />
+						<div class="about_info">
+							<div class="about_title"> </div>
+							<div class="about_content">
+								NEW COOPERATION, NEW MODE NEW DEVELOPMENT, POWERFUL COMBINATION CREATEGREATER VALUE. WELCOME TO COOPERATE.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contactUs">
+					<div class="contactUs_info">
+						<div class="info_title">Contact Us</div>
+						<p class="info_item">SHENZHEN MARK TECHNOLOGY CO.,LTD </p>
+						<p class="info_item">Tel:+86-755-29709391    29709393 </p>
+						<p class="info_item">Fax:+86-755-29709393 </p>
+						<p class="info_item">Skype:Jackyzhouj  </p>
+						<p class="info_item">MSN:jackyzhouj@hotmail.com </p>
+						<p class="info_item">Email:sales@lenene.com </p>
+						<p class="info_item">6th Floor,Building A,DongFangYaYuan,BaoMin 2 Street,Chen Tian communities,Xixiang Bao'an District,Shenzhen(COMPANY) </p>
+                        
+					</div>
+					<div class="contact_map">
+						<iframe src="map.html" width="473" height="300" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- lenene body end -->
+			
+			<!-- lenene footer start -->
+			<div class="lenene_footer">
+				<div class="footer_main">
+					<div class="footer_items">
+						<div class="items">
+							<div class="items_title">Shop</div>
+							<div class="items_content">
+								<div class="item">Gaming Combo</div>
+								<div class="item">Case</div>
+								<div class="item">Speaker</div>
+								<div class="item">Keyboard</div>
+								<div class="item">Mouse</div>
+								<div class="item">Headphone</div>
+								<div class="item">Earphone</div>
+								<div class="item">USB HUB</div>
+								<div class="item">Cable</div>
+								<div class="item">Card reader</div>
+								<div class="item">Mouse pad</div>
+								<div class="item">Other</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">Customer Service</div>
+							<div class="items_content" style="height: 230px;">
+								<div class="item">Register Your Product</div>
+								<div class="item">Influencers</div>
+								<div class="item">User Manual</div>
+								<div class="item">Track Order</div>
+								<div class="item">Refound & Exchange</div>
+								<div class="item">Payment</div>
+								<div class="item">Shopping Policy</div>
+								<div class="item">Warranty & Refund Policy</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="items_title">About Company</div>
+							<div class="items_content">
+								<div class="item">Why Choose Us</div>
+								<div class="item">About Us</div>
+								<div class="item">Contact Us</div>
+								<div class="item">Online Wholesale</div>
+								<div class="item">Sales Network</div>
+								<div class="item">Affiate Program</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_copy">
+						<img src="img/logo.png" />
+						Privacy Policy I Terms of Service I App Privacy Policy
+					</div>
+				</div>
+			</div>
+			<!-- lenene footer end -->
+		</div>
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/aboutUs.js"></script>
+	</body>
+</html>

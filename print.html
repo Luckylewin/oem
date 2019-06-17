@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>LENENE-print</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen"/>
+		<link rel="stylesheet" href="css/print.css" />
+	</head>
+	<body>
+		<div class="print" id="lenene"  v-cloak>
+			<div class="print_top">
+				<img src="img/logo.png" />
+				<div class="print_title">PURCUASE LIST</div>
+				2019-5-14
+			</div>
+			<div class="car_main">
+				<div class="car_list_top">
+					<div class="top_item short_item">
+						All election
+					</div>
+					<div class="top_item short_item">Model</div>
+					<div class="top_item long_item long_th">Product Parameter </div>
+					<div class="top_item min_item long_th">Quantity</div>
+					<div class="top_item min_item long_th">Unit Price</div>
+					<div class="top_item min_item long_th">Total Price</div>
+				</div>
+				<div class="goods_list">
+					<div class="goods_item" v-for="cl in carList">
+						<div class="goods_img short_item">
+							<img :src="cl.img" />
+						</div>
+						<div class="goods_model short_item">
+							<div class="model_title">{{cl.name}}</div>
+							<div class="model_subtitle">Colour:{{cl.color}}</div>
+						</div>
+						<div class="goods_parameter long_item">
+							<div class="parameter">With virtual 7.1  RGB </div>
+							<div class="parameter">Maximum power: 50MV </div> 
+							<div class="parameter">Rated power: 30MV</div>
+							<div class="parameter">Impedance: 32 ohms plus or minus 15%</div>
+							<div class="parameter">Sensitivity: 105 plus or minus 3qb</div>
+							<div class="parameter">Microphone sensitivity: -40 plus or minus 3qb</div>
+							<div class="parameter">Transmission mode: USB 7.1</div>
+							<div class="parameter">Main line length: 2.4 M</div>
+							<div class="parameter">Speaker:2* 50 mm</div>
+							<div class="parameter">Tone control: adjustable</div>
+							<div class="parameter">Headset: a conjoined microphone </div>
+						</div>
+						<div class="goods_quantity min_item">
+							{{cl.quantity}}
+						</div>
+						<div class="goods_quantity min_item">
+							
+						</div>
+						<div class="goods_quantity min_item">
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="car_bottom">
+					For more questions, please send an email to the salesperson.  sales@lenene.com   sales1@lenene.com
+				</div>
+			</div>
+			<div class="send">
+				<div class="send_model">
+					<div class="model_title">Send it to the salesman?</div>
+					<div class="model_item">
+						name
+						<div class="input_item">
+							<div class="input_mast">*</div>
+							<input type="text" class="input" v-model="name" />
+						</div>
+					</div>
+					<div class="model_item">
+						E-mail
+						<div class="input_item">
+							<div class="input_mast">*</div>
+							<input type="text" class="input" v-model="email" />
+						</div>
+					</div>
+					<div class="model_item">
+						skype
+						<div class="input_item">
+							<input type="text" class="input" v-model="skype" style="padding-left: 5px;" />
+						</div>
+					</div>
+					<div class="model_btns">
+						<div class="btn_item" @click="send">SEND</div>
+						<div class="btn_item" @click="cancel">CANCEL</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/print.js"></script>
+	</body>
+</html>

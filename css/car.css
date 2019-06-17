@@ -1,0 +1,147 @@
+.lenene_main{
+	background: #EEEEEE;
+	padding: 50px 0;
+}
+.car_main{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.car_list_top{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 46px;
+	background: white;
+	margin-bottom: 9px;
+}
+.top_item{
+	font-size: 16px;
+	height: 100%;
+	align-items: center;
+	display: flex;
+}
+.long_item{
+	width: 40%;
+	font-family: 'Gotham-Medium';
+}
+.long_th{
+	font-weight: bold;
+}
+.short_item{
+	width: 15%;
+	font-size:16px;
+	font-weight: bold;
+}
+.top_item .item_checkbox{
+	background: white;
+	margin-right: 10px;
+}
+.car_bottom{
+	display: flex;
+	justify-content: space-between;
+	background: #DCDCDC;
+	height: 55px;
+	align-items: center;
+	padding-left: 20px;
+	margin-top: 9px;
+}
+.deleteAll{
+	margin-left: 36px;
+}
+.seleteNum{
+	color: #FF0000;
+	font-size: 23px;
+	margin: 0 5px;
+}
+.printBtn{
+	width: 130px;
+	height: 100%;
+	background-image: url(../img/print.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 30px;
+}
+.goods_item{
+	height: 228px;
+	background: white;
+	margin-bottom: 1px;
+	position: relative;
+	padding: 20px;
+	display: flex;
+}
+.select_goods{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.goods_img{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.goods_img img{
+	width: 50%;
+}
+.goods_model{
+	display: flex;
+	/* align-items: center; */
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+}
+.model_title{
+	font-size: 15px;
+	margin-bottom: 10px;
+	font-family: 'Gotham-Medium';
+	font-weight: bold;
+}
+
+.model_subtitle{
+	font-size:15px;
+	font-family:Adobe Heiti Std R;
+	font-weight:normal;
+	color:rgba(0,0,0,1);
+	line-height:31px;
+	opacity:0.6;
+}
+
+.parameter{
+	font-size: 13px;
+	line-height: 17px;
+}
+.goods_quantity{
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+.quantity_ipt{
+	display: flex;
+	align-items: center;
+}
+.quantity_btn{
+	width: 24px;
+	height: 21px;
+	cursor: pointer;
+}
+.quantity_btn img{
+	width: 100%;
+}
+.ipt_num{
+	height: 20px;
+	width: 64px;
+	font-size: 15px;
+	outline: none;
+	text-align: center;
+}
+.delete_btn{
+	font-size: 16px;
+	cursor: pointer;
+}
+.car_total{
+	font-family: 'Gotham-Medium';
+	font-size: 15px;
+	font-weight: bold;
+	color:rgba(0,0,0,1);
+}

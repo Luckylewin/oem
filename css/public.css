@@ -1,0 +1,313 @@
+/* fonts related */
+@font-face{
+     font-family: 'Gotham-Light'; 
+     src: url('../fonts/GOTHAM-LIGHT.OTF');
+}
+
+@font-face{
+     font-family: 'Gotham-Medium'; 
+     src: url('../fonts/GOTHAMCOND-MEDIUM.OTF');
+}
+
+@font-face{
+     font-family: 'Gotham-Book'; 
+     src: url('../fonts/GOTHAMCOND-BOOK.OTF');
+}
+
+@font-face{
+     font-family: 'Gotham-Bold'; 
+     src: url('../fonts/GOTHAMCOND-BOLD.OTF');
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.lenene{
+	width: 100%;
+	/* max-width: 1920px; */
+	margin: 0 auto;
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+.lenene_main{
+	flex: 1;
+	/* width: 1440px; */
+	width: 100%;
+	margin: 0 auto;
+}
+[v-cloak] {
+	display: none;
+}
+
+/*menu static*/
+.lenene_top{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: white;
+	z-index: 999;
+	left:0;
+	border-bottom: solid 1px #EEEEEE;
+}
+.lenene_top_main{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+.lenene_logo{
+	
+}
+.lenene_menu{
+	display: flex;
+}
+.lenene_search{
+	display: flex;
+	align-items: center;
+}
+.search_ipt_item{
+	width: 222px;
+	height: 36px;
+	position: relative;
+}
+.search_ipt{
+	height: 100%;
+	width: 0;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	outline: none;
+	padding-left: 0;
+	background-image: url(../img/ipt_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    right: 0;
+}
+.search_icon{
+	width: 25px;
+	height: 26px;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.car_icon{
+	width: 28px;
+	height: 27px;
+	margin-left: 30px;
+}
+.car{
+	position: relative;
+}
+.car_num{
+	font-size: 12px;
+	color: white;
+	background: #FF0000;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.sf-menu li{
+	background: white;
+}
+.sf-menu a, .sf-menu a:visited{
+	color: #000;
+}
+.sf-menu a{
+	border: none;
+	/*padding: 25px 28px;
+	padding-top: 24px;*/
+	padding: 18px 28px;
+	padding-top: 23px;
+	font-family: "Gotham-Medium";
+	font-size: 20px;
+}
+.sf-menu > li > ul a {
+	padding: 0;
+} 
+.sf-menu{
+	margin-bottom: 0;
+	line-height: unset;
+}
+.language{
+	padding: 25px 28px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.language.active{
+	background: #DEDEDE;
+}
+.language img{
+	width: 10px;
+}
+.language_ul{
+	position: absolute;
+	top: 70px;
+	left: 0;
+	list-style: none;
+	width: 168px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 0;
+}
+.language_li{
+	background: #DEDEDE;
+	width: 100%;
+	height: 30px;
+	padding: 0 28px;
+	line-height: 30px;
+	text-transform: none;
+}
+.language_li:hover{
+	background: #C7C7C7;
+}
+.sf-menu li:hover{
+	background: #dedede;
+}
+.sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active{
+	background: rgba(0,0,0,0);
+}
+.sf-menu li ul li:hover{
+	background: #c7c7c7;
+}
+.sf-menu li ul li.sfHover, .sf-menu li ul li a:focus, .sf-menu li ul li a:hover, .sf-menu li ul li a:active{
+	background: rgba(0,0,0,0);
+}
+.sf-menu li li{
+	background: #DEDEDE;
+}
+.sf-menu ul{
+	width: 249px;
+}
+.sf-menu ul li a{
+	width: 100%;
+}
+.sf-menu ul li{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 28px;
+	position: relative;
+}
+.sf-menu ul ul{
+	width: 168px;
+	left: 249px;
+	position: absolute;
+}
+.sf-menu ul ul li{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 23px;
+}
+.sf-menu li li li{
+	background: #C7C7C7;
+}
+.sf-menu li ul li ul li:hover{
+	background: #a7a7a7;
+}
+.sf-menu li ul li ul li.sfHover, .sf-menu li ul li ul li a:focus, .sf-menu li ul li ul li a:hover, .sf-menu li ul li ul li a:active{
+	background: rgba(0,0,0,0);
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul{
+	left: 249px;
+}
+/*menu end*/
+
+/* lenene footer start */
+.lenene_footer{
+	background: #eeeeee;
+	padding: 57px 0 45px;
+	border-top: solid 1px #E5E5E5;
+}
+.footer_main{
+	/* width: 1440px; */
+	width: 100%;
+	
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.footer_items{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.items{
+	width: 250px;
+}
+.items:first-child{
+	margin-left: 100px;
+}
+.items_title{
+	font-size: 15px;
+	font-family: "Gotham-Bold";
+	font-weight: bold;
+	margin-bottom: 23px;
+}
+.items_content{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 180px;
+}
+.item{
+	font-size: 13px;
+	margin-bottom: 10px;
+	font-family: "Gotham-Medium";
+	font-weight: 500;
+}
+.footer_copy{
+	font-size: 13px;
+	font-family: "Gotham-Medium";
+	font-weight: 500;
+	line-height: 31px;
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+}
+.footer_copy img{
+	margin-right: 24px;
+}
+/* lenene footer end */
+
+@media screen and (max-width:1280px) {
+	.sf-menu a{
+		padding: 25px 18px;
+		font-size: 13px;
+	}
+	.lenene_top_main{
+		padding: 0 10px;
+	}
+	.car_icon {
+		margin-left: 15px;
+	}
+	.lenene_logo{
+		width: 130px;
+	}
+	.lenene_logo img{
+		width: 100%;
+	}
+}

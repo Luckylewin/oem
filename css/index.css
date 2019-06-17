@@ -1,0 +1,93 @@
+/* banner start */
+.carousel-indicators li{
+	border:solid 1px #E5E5E5;
+}
+.carousel-indicators .active{
+	background: #BFBFBF;
+}
+.carousel{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.item_main{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 652px;
+}
+.goods_title{
+	text-transform: uppercase;
+	font-size: 70px;
+	font-family: 'Gotham-Light'
+}
+.goods_info{
+	text-transform: uppercase;
+	font-size: 70px;
+	font-weight: bold;
+	line-height: 75px;
+	font-family: 'Gotham-Medium'
+}
+.add_car{
+	width: 307px;
+	margin-top: 64px;
+}
+.add_car img{
+	width: 100%;
+}
+/* banner end */
+
+/* goods start */
+.goods{
+	width: 100%;
+	background: #EEEEEE;
+}
+.goods_main{
+	/* width: 1440px; */
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 79px 0;
+}
+.goods_item{
+	width: 19.5%;
+	background: white;
+	margin-bottom: 10px;
+	padding-top: 29px;
+}
+.goods_item img{
+	width: 100%;
+}
+.goods_name{
+	text-align: center;
+	padding: 31px 0;
+	color: #B7B7B7;
+	font-size: 26px;
+	font-family: 'Gotham-Medium';
+	font-weight: 500
+}
+/* goods end */
+
+@media screen and (max-width:1280px) {
+	.goods_title{
+		font-size: 60px;
+	}
+	.goods_info{
+		font-size: 60px;
+	}
+	.add_car {
+		width: 250px;
+	}
+}
+@media screen and (max-width:1120px) {
+	.goods_title{
+		font-size: 50px;
+	}
+	.goods_info{
+		font-size: 50px;
+	}
+}
